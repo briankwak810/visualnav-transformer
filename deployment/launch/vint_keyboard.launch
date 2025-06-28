@@ -1,8 +1,8 @@
 <launch>
     <!-- Replace joy nodes with keyboard teleop -->
     <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen">
-        <param name="scale_linear" value="0.5"/>
-        <param name="scale_angular" value="1.0"/>
+        <param name="scale_linear" value="3.0"/>
+        <param name="scale_angular" value="1.5"/>
         <remap from="cmd_vel" to="cmd_vel_mux/input/teleop"/>
     </node>
 
